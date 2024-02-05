@@ -2,6 +2,10 @@
 # version and features{} block.
 
 terraform {
+  
+  backend "local" {
+    path = "../../state-file/terraform.tfstate"
+  }
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
