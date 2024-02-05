@@ -25,4 +25,12 @@ module "enterprise_scale" {
   root_parent_id = data.azurerm_client_config.core.tenant_id
   root_id        = var.root_id
   root_name      = var.root_name
+
+# Identiy & Management Subscription IDs
+
+  deploy_identity_resources = true
+  subscription_id_identity  = "9bb108f8-b5b7-4ba5-96f7-65f17ee59b93"
+
+  deploy_management_resources = true
+  subscription_id_management  = "b1d61f03-47e1-4147-b8e8-ba6dc7092bed"
 }
