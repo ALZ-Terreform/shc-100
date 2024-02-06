@@ -34,6 +34,9 @@ module "enterprise_scale" {
 /*
   deploy_management_resources = true
   subscription_id_management  = "b1d61f03-47e1-4147-b8e8-ba6dc7092bed"
+ /* 
+  deploy_connectivity_resources = true
+  subscription_id_connectivity  = "2e7e16b6-57de-4579-a09c-53b748eea49b"
   */
   custom_landing_zones = {
     "${var.root_id}-hippa-corp" = {
